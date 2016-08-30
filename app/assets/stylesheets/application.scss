@@ -21,7 +21,6 @@
 }
 .navbar-header {
     height: 95px;
-
 }
 .navbar-brand {
     padding: 0;
@@ -36,14 +35,48 @@
     background-color: white;
     border-color: white;
 }
-.navbar-brand, .navbar-nav li {
-
-
-  a {
-      line-height: 95px;
-      height: 95px;
-      padding-top: 0;
-
+.navbar-brand,
+.navbar-nav li {
+    a {
+        line-height: 95px;
+        height: 95px;
+        padding-top: 0;
     }
+}
 
+
+.hero{
+  background:
+  linear-gradient(
+    rgba(36,65,75,0.9),
+    rgba(36,65,75,0.9)
+  ),
+  url(//d9hhrg4mnvzow.cloudfront.net/unbouncepages.com/xinsheng-full-stack/7b8ebd22-goodbank-heroshot.png);
+
+    display: block;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 288px;
+    position: relative;
+
+    color: white;
+}
+
+.hero-title{
+  padding-top: 40px;
+  h1{
+      font-size: 48px;
+  }
 }
