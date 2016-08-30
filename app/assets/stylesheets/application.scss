@@ -100,19 +100,22 @@
   }
 }
 
-.ideal-students{
-  h2{
-    color:#42899d;
-    border-bottom: 3px solid #42899d;
-    padding-bottom: 10px;
-    width: 80%;
-    margin:auto;
-  }
+h2.underline-title{
+  color:#42899d;
+  border-bottom: 3px solid #42899d;
+  padding-bottom: 10px;
+  width: 80%;
+  margin:auto;
+}
 
-  .description{
-    margin-top: 30px;
-    font-size: 18px;
-  }
+.normal-content p{
+  margin-top: 30px;
+  font-size: 18px;
+
+}
+.ideal-students{
+
+
 }
 
 .syllabus{
