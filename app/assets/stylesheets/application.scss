@@ -83,8 +83,12 @@
     }
 }
 
+.course-content-block{
+    margin-top: 30px;
+}
+
 .course-benefit{
-  margin-top: 30px;
+
   h3{
     font-size: 22px;
     color:#42899d;
@@ -92,5 +96,20 @@
   }
   p{
     font-size: 14px;
+  }
+}
+
+.ideal-students{
+  h2{
+    color:#42899d;
+    border-bottom: 3px solid #42899d;
+    padding-bottom: 10px;
+    width: 80%;
+    margin:auto;
+  }
+
+  .description{
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
