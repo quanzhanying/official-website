@@ -17,3 +17,24 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar-header{
+  height: 95px;
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  padding: 10px; /* firefox bug fix */
+  width: auto;
+}
+
+ .navbar-default {
+     background-color: white;
+     border-color: white;
+ }
