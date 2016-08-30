@@ -61,8 +61,12 @@
     min-height: 288px;
     position: relative;
     color: white;
-    .cta-button {
-        padding: 30px 10px;
+
+    .cta-button{
+      padding-top: 30px;
+      margin:auto;
+      width: 200px;
+      padding-bottom: 30px;
     }
 }
 .hero-title {
