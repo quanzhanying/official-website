@@ -11,4 +11,8 @@ class WelcomeController < ApplicationController
   def apply
     render "steps/step_1"
   end
+
+  def faq
+    @categories = Category.all
+  end
 end
