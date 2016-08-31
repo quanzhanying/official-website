@@ -3,31 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active">
-                    <a href="#section1">Overview</a>
-                </li>
-                <li>
-                    <a href="#section2">Syallabus</a>
-                </li>
-                <li>
-                    <a href="#section3">Section 3</a>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#section41">Section 4-1</a>
-                        </li>
-                        <li>
-                            <a href="#section42">Section 4-2</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+          <%= render :partial => "overview_sidebar" %>
 
         </div>
         <div class="col-md-9">
