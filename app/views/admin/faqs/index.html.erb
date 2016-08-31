@@ -1,8 +1,12 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Faqs</h1>
 
-<table>
+<div class="clearfix">
+  <%= link_to 'New FAQ', new_admin_faq_path, :class => "btn btn-default pull-right" %>
+
+</div>
+<br>
+<table class="table table-bordered">
   <thead>
     <tr>
       <th>Title</th>
@@ -18,14 +22,10 @@
         <td><%= faq.title %></td>
         <td><%= faq.content %></td>
         <td><%= faq.category_id %></td>
-        <td><%= link_to 'Show', faq %></td>
-        <td><%= link_to 'Edit', edit_faq_path(faq) %></td>
-        <td><%= link_to 'Destroy', faq, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', admin_faq_path(faq) %></td>
+        <td><%= link_to 'Edit', edit_admin_faq_path(faq) %></td>
+        <td><%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Faq', new_admin_faq_path %>
