@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :faqs
-  resources :categories
   devise_for :users
 
   resources :students
@@ -11,5 +9,11 @@ Rails.application.routes.draw do
   get "/projects", to: "students#projects"
   get "/apply", to: "welcome#apply"
   get "/apply/success", to: "steps#success"
+
+  namespace :admin do
+    resources :faqs
+    resources :categories
+    resources :users
+  end
   root to: "welcome#index"
 end

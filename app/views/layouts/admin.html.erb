@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HACKSCHOOL
+        </title>
+        <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= stylesheet_link_tag    'simplemde.min' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'simplemde.min' %>
+    </head>
+
+    <body>
+
+        <%= render "common/admin_navbar" %>
+        <div class="container">
+            <%= render "common/flashes" %>
+            <div class="row" style=" padding-top:20px;">
+                <div class="col-md-2">
+                    <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+
+                    <li><%= active_link_to("類別", admin_categories_path , :active => :inclusive, :wrap_tag => :li ) %></li>
+                    <li><%= active_link_to("問題", admin_faqs_path , :active => :inclusive, :wrap_tag => :li ) %></li>
+                    <li><%= active_link_to("使用者", admin_users_path , :active => :inclusive, :wrap_tag => :li ) %></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-10">
+
+                    <%= yield %>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <div class="container">
+        <%= render "common/footer" %>
+    </div>
+</html>
