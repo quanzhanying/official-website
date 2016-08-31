@@ -14,5 +14,7 @@ module XinCourse
 
     config.time_zone = "Beijing"
     config.generators.test_framework = nil
+
+    config.filepicker_rails.api_key = ENV["filepicker_key"]
   end
 end
