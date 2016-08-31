@@ -22,49 +22,43 @@
         width: 200px;
         padding-bottom: 30px;
     }
-
-
-
-    .hero-item-wrapper{
-      width: 100%
+    .hero-item-wrapper {
+        width: 100%;
     }
-
-    .hero-item-group {
-        width: 500px;
-        margin: 0 auto;
-        padding-top: 30px;
-
-        .left{
-          margin-left: 30px;
-          margin-right: 20px;
-
-        }
-
-        .right{
-          margin-left: 20px;
-        }
-
-        .hero-item {
-            margin-top: 10px;
-
-            padding: 20px;
-            float: left;
-            min-width: 170px;
-            border: 1px solid white;
-
-        }
-
-    }
-
-
     .course-cost {
         font-size: 40px;
     }
 }
-
-
-
-
+.hero-item-group {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    .left {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .right {
+        margin-left: 20px;
+    }
+    .hero-item {
+        margin-top: 10px;
+        padding: 20px;
+        float: left;
+        min-width: 170px;
+        border: 1px solid white;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .hero-item-group {
+        width: 60%;
+        .left{
+          margin-left: 20px;
+        }
+        .right{
+          margin-left: 20px;
+        }
+    }
+}
 .hero-title {
     padding-top: 40px;
     padding-left: 30px;
@@ -144,15 +138,11 @@ h2.underline-title {
     .right-content {
         height: 480px;
     }
-
     @media only screen and (max-width : 480px) {
-
-      .right-content {
-          height: 280px;
-      }
-
+        .right-content {
+            height: 280px;
+        }
     }
-
     .content-block {
         h4 {
             padding: 10px;
@@ -172,13 +162,10 @@ h2.underline-title {
     .cta-button-block {
         margin-top: 200px;
     }
-
     @media only screen and (max-width : 480px) {
-
-      .cta-button-block {
-          margin-top: 50px;
-      }
-
+        .cta-button-block {
+            margin-top: 50px;
+        }
     }
     a,
     a:hover {
