@@ -5,7 +5,6 @@ Rails.application.routes.draw do
 
   get "/overview", to: "welcome#overview"
   get "/syallabus", to: "welcome#syallabus"
-  get "/students", to: "welcome#students"
   get "/projects", to: "students#projects"
   get "/apply", to: "welcome#apply"
   get "/apply/step_2", to: "steps#step_2"

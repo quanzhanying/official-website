@@ -14,12 +14,12 @@
         <%= render :partial => "steps/step_2_bar" %>
 
         <p class="step-desc">
-            請認真詳實填寫報名表，您填寫的詳細程度將會決定報名錄取優先順位。
+            请认真详实填写报名表，您填写的详细程度将会决定报名录取优先顺位。
         </p>
 
         <%= simple_form_for Student.new , html: { class: 'form-horizontal' } , :wrapper => :horizontal_form do |f| %>
 
-        <%= f.input :job, :label => "你現在的職業是"%>
+        <%= f.input :job, :label => "你现在的职业是"%>
         <%= f.input :location, :label => "你居住的地区是"%>
         <%= f.input :name, :label => " 你的姓名是"%>
         <%= f.input :phone, :label => "  联系电话"%>
@@ -28,7 +28,7 @@
 
         <div class="form-group email required student_email">
             <div class="col-sm-2">
-                <%= f.label :filepicker_url, "报名表上传（請確保一定要上傳附件）" %>
+                <%= f.label :filepicker_url, "报名表上传（请确保一定要上传附件）" %>
             </div>
             <div class="col-sm-10">
                 <%= f.filepicker_field :filepicker_url, :services => "COMPUTER, URL", :label => "报名表上传", dragdrop: true %>
