@@ -1,22 +1,22 @@
 <%= simple_form_for( [:admin, @faq]) do |f| %>
 
-  <div class="form-inputs clearfix  ">
+<div class="form-inputs clearfix  ">
     <%= f.input :title %>
     <%= f.input :content %>
     <%= f.input :category_id do %>
-      <%= f.select :category_id, Category.all.map { |r| [r.title, r.id ] }, include_blank: true %>
+    <%= f.select :category_id, Category.all.map { |r| [r.title, r.id ] }, include_blank: true %>
     <% end %>
 
-  </div>
+</div>
 
-  <div class="clearfix">
+<div class="clearfix">
 
-          <%= f.input :is_hidden %>
-        </div>
-        <div class="clearfix">
-      <%= f.input :is_display %>
-        </div>
-  <div class="form-actions text-center " style="padding-top: 20px; padding-right: 20px;">
+    <%= f.input :is_hidden %>
+</div>
+<div class="clearfix">
+    <%= f.input :is_display %>
+</div>
+<div class="form-actions text-center " style="padding-top: 20px; padding-right: 20px;">
     <%= f.submit "送出", :class => "btn btn-primary pull-right" %>
-  </div>
+</div>
 <% end %>
