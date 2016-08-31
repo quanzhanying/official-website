@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  resources :students
+
   get "/overview", to: "welcome#overview"
   get "/syallabus", to: "welcome#syallabus"
   get "/students", to: "welcome#students"
