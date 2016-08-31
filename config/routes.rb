@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get "/syallabus", to: "welcome#syallabus"
   get "/projects", to: "students#projects"
   get "/apply", to: "welcome#apply"
-  get "/apply/step_2", to: "steps#step_2"
   get "/apply/step_3", to: "steps#step_3"
   root to: "welcome#index"
 end

@@ -1,4 +1,9 @@
 class Student < ApplicationRecord
+  validates :job, presence: true
+  validates :location, presence: true
+  validates :name, presence: true
+  validates :phone, presence: true
+  validates :email, presence: true
   validates :filepicker_url, presence: true
 end
 

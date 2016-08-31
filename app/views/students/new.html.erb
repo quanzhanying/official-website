@@ -17,7 +17,7 @@
             请认真详实填写报名表，您填写的详细程度将会决定报名录取优先顺位。
         </p>
 
-        <%= simple_form_for Student.new , html: { class: 'form-horizontal' } , :wrapper => :horizontal_form do |f| %>
+        <%= simple_form_for @student , html: { class: 'form-horizontal' } , :wrapper => :horizontal_form do |f| %>
 
         <%= f.input :job, :label => "你现在的职业是"%>
         <%= f.input :location, :label => "你居住的地区是"%>
