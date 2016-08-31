@@ -1,4 +1,5 @@
 class Faq < ApplicationRecord
+  belongs_to :category
 end
 
 # == Schema Information
