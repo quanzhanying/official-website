@@ -15,4 +15,5 @@ end
 #  updated_at  :datetime         not null
 #  position    :integer
 #  is_hidden   :boolean          default(TRUE)
+#  is_display  :boolean          default(FALSE)
 #

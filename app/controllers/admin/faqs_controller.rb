@@ -43,8 +43,6 @@ class Admin::FaqsController < AdminController
     end
   end
 
-  # DELETE /faqs/1
-  # DELETE /faqs/1.json
   def destroy
     @faq.destroy
     redirect_to admin_faqs_url
@@ -59,6 +57,6 @@ class Admin::FaqsController < AdminController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def faq_params
-    params.require(:faq).permit(:title, :content, :category_id, :is_hidden)
+    params.require(:faq).permit(:title, :content, :category_id, :is_hidden, :is_display)
   end
 end
