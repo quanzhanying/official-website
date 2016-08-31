@@ -19,7 +19,12 @@
 
         <%= simple_form_for :student , :url => "/apply_step_3",  html: { class: 'form-horizontal' } , :wrapper => :horizontal_form do |f| %>
 
-          <%= f.input :name %>
+        <%= f.input :job, :label => "你現在的職業是"%>
+        <%= f.input :location, :label => "你居住的地区是"%>
+        <%= f.input :name, :label => " 你的姓名是"%>
+        <%= f.input :phone, :label => "  联系电话"%>
+        <%= f.input :wechat_account, :label => "微信号"%>
+        <%= f.input :email, :label => " 一定会收的Email"%>
         <% end %>
         <div class="text-center">
             <%= link_to("第三步", "/apply/step_3", :class => "btn btn-primary btn-lg") %>
