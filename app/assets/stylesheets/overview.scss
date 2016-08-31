@@ -23,14 +23,21 @@
 
 .overview{
   h2{
-      margin-top:0px;
+    //  margin-top:0px;
   }
 
+  .nav{
+    margin-top:10px;
+  }
   .overview-block{
     margin: 20px;
     img{
       padding: 15px;
     }
+  }
+
+  .sidebar{
+    padding-top: 20px;
   }
 
 
