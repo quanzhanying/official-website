@@ -1,11 +1,12 @@
 <div class="row day">
 
   <h3> Day 9 </h3>
-  <a href="http://www.youtube.com/watch?v=k6mFF3VmVAs" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-3">
 
-      <%= image_tag("http://placehold.it/160x90/ccc/?text=Talent Rocket", :class => "img-responsive") %>
+  <%= link_to "http://www.youtube.com/watch?v=k6mFF3VmVAs",:class => "col-sm-3", :data => { :toggle => "lightbox", :gallery => "youtubevideos"} do  %>
+    <%= image_tag("http://placehold.it/160x90/ccc/?text=Talent Rocket", :class => "img-responsive") %>
+  <% end %>
 
-  </a>
+
   <a href="http://youtu.be/iQ4D273C7Ac" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-3">
       <%= image_tag("http://placehold.it/160x90/ccc/?text=HackSchool", :class => "img-responsive") %>
 
