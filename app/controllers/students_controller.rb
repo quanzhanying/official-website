@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
-      render template: "steps/step_3"
+      redirect_to "/apply/success"
     else
       render :new
     end
