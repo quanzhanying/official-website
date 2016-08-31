@@ -35,6 +35,7 @@ gem "devise"
 gem "simple_form"
 gem "markdown-rails"
 gem "lightbox-bootstrap-rails"
+gem "filepicker-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -28,10 +28,18 @@
 }
 
 .apply{
+  width: 100%;
+
   .step{
-    padding-left:30px;
-    padding-right: 30px;
+    margin: auto;
+
   }
+}
+
+.step-desc{
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .stepwizard-step p {
