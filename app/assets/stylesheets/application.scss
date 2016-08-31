@@ -46,6 +46,22 @@
     }
 }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 480px) {
+
+  .navbar-brand,
+  .navbar-nav li {
+      a {
+          line-height: 45px;
+          height: 45px;
+          padding-top: 0;
+      }
+  }
+
+
+}
+
+
 .red{
   color:red;
 }

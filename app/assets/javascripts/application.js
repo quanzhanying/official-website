@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap/modal
 //= require bootstrap/dropdown
+//= require bootstrap/collapse
+//= require bootstrap/modal
+
 //= require lightbox-bootstrap
 //= require lightbox_bootstraped
