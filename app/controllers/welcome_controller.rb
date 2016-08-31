@@ -9,5 +9,6 @@ class WelcomeController < ApplicationController
   end
 
   def apply
+    render "steps/step_1"
   end
 end
