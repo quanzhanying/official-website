@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
   def students
   end
+
+  def apply
+  end
 end
