@@ -12,8 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
 
  */
+
+$icon-font-path: '../fonts/bootstrap/';
+
+@function font-path($path) {
+  @return $path;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "lightbox-bootstrap";
