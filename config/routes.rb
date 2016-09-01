@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/syallabus", to: "welcome#syallabus"
   get "/projects", to: "students#projects"
   get "/apply", to: "welcome#apply"
+  get "/teacher", to: "welcome#teacher"
   get "/apply/success", to: "steps#success"
 
   resources :faqs, only: [:index]
