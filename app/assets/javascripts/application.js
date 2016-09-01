@@ -15,6 +15,6 @@
 //= require bootstrap/dropdown
 //= require bootstrap/collapse
 //= require bootstrap/modal
-
+//= require bootstrap/alert
 //= require lightbox-bootstrap
 //= require lightbox_bootstraped
