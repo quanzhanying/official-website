@@ -55,6 +55,7 @@ class Admin::FaqsController < AdminController
   def move_up
     @faq = Faq.find(params[:id])
     @faq.move_higher
+    redirect_to :back
   end
 
   def move_down
