@@ -2,7 +2,7 @@
 
 <div class="form-inputs clearfix  ">
     <%= f.input :title %>
-    <%= f.input :content %>
+    <%= f.trix_editor :content %>
     <%= f.input :category_id do %>
     <%= f.select :category_id, Category.all.map { |r| [r.title, r.id ] }, include_blank: true %>
     <% end %>

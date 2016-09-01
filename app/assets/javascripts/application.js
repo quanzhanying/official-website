@@ -18,3 +18,4 @@
 //= require bootstrap/alert
 //= require lightbox-bootstrap
 //= require lightbox_bootstraped
+//= require trix

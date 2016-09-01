@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  *= require font-awesome
-
+ *= require trix
  */
 
 $icon-font-path: '../fonts/bootstrap/';
@@ -71,7 +71,7 @@ $icon-font-path: '../fonts/bootstrap/';
 
   }
 
-  
+
 }
 
 
@@ -88,4 +88,10 @@ $icon-font-path: '../fonts/bootstrap/';
   height: 50px;
   padding-top : 15px;
   color: white;
+}
+
+// Trix Form
+.formatted_content{
+  min-height: 150px;
+  margin-bottom: 15px;
 }
