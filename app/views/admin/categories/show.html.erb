@@ -15,7 +15,7 @@
         <% @faqs.each do |faq| %>
         <tr>
             <td><%= faq.title %></td>
-            <td><%= faq.content %></td>
+            <td><%= render_trix_content(faq.content) %></td>
             <td><%= faq.category.title %></td>
             <td><%= link_to 'Edit', edit_admin_faq_path(faq) %></td>
             <td><%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %></td>

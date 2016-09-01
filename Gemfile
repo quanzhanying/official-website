@@ -40,6 +40,7 @@ gem "figaro"
 gem "font-awesome-rails"
 gem "acts_as_list"
 gem "trix"
+gem "rails_autolink"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

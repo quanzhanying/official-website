@@ -37,7 +37,11 @@ class Admin::FaqsController < AdminController
   def update
     if @faq.update(faq_params)
 
-      redirect_to admin_faqs_path
+      if @faq.category
+        redirect_to admin_category_path(@faq.category)
+      else
+        redirect_to admin_faqs_path
+      end
     else
       render :edit
     end
