@@ -3,9 +3,13 @@ class Admin::CategoriesController < AdminController
 
   def index
     @categories = Category.all
+    drop_breadcrumb "Categories"
   end
 
   def show
+    @faqs = @category.faqs
+    drop_breadcrumb "Categories", admin_categories_path
+    drop_breadcrumb @category.title
   end
 
   def new

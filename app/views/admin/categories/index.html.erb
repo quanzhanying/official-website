@@ -18,8 +18,8 @@
     <tbody>
         <% @categories.each do |category| %>
         <tr>
-            <td><%= category.title %></td>
-            <td><%= link_to 'Show', admin_category_path(category) %></td>
+            <td><%= link_to(category.title,  admin_category_path(category) ) %></td>
+
             <td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
             <td><%= link_to 'Destroy', admin_category_path(category), method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
