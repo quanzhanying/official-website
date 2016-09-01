@@ -1,0 +1,52 @@
+<script>
+
+/* global filepicker: false */
+
+(function() {
+  'use strict';
+
+  var file_path = '/users/<%= current_user.id %>/';
+  
+  function add(attachment) {
+    if (attachment.file) {
+      filepicker.store(
+        attachment.file,
+        { path :  file_path + attachment.file.name },
+        function(blob) {
+          attachment.setAttributes({
+            href: blob.url,
+            url: blob.url
+          });
+        },
+        function() {
+          // Error callback
+        },
+        function(progress) {
+          attachment.setUploadProgress(progress);
+        }
+      );
+    }
+  }
+
+  function remove(attachment) {
+    filepicker.remove({
+      url: attachment.getURL()
+    });
+  }
+
+  $(function() {
+    $(document).on('trix-attachment-add', function(event) {
+      add(event.originalEvent.attachment);
+    });
+
+    $(document).on('trix-attachment-remove', function(event) {
+      remove(event.originalEvent.attachment);
+    });
+
+    var fpApiKey = $('meta[name=fp-apikey]').attr('content');
+    filepicker.setKey(fpApiKey);
+  });
+}());
+
+
+</script>

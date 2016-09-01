@@ -20,3 +20,8 @@
     <%= f.submit "送出", :class => "btn btn-primary pull-right" %>
 </div>
 <% end %>
+
+
+<%= content_for :javascripts do %>
+  <%= render "common/fp_setting" %>
+<% end %>
