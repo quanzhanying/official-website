@@ -10,4 +10,11 @@ class ApplicationController < ActionController::Base
       "application"
     end
   end
+
+  def require_is_admin
+    unless current_user.admin?
+      flash[:alert] = "You have no permission"
+      redirect_to root_path
+      end
+  end
 end
