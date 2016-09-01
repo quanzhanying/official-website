@@ -1,26 +1,26 @@
-Xdite 是兩岸相當知名的開發者與軟體教練。具備以上的 10 年 Ruby on Rails 開發經驗。
+Xdite 是两岸相当知名的开发者与软体教练。具备以上的 10 年 Ruby on Rails 开发经验。
 
-目前應該是兩岸培訓 Ruby on Rails 職業級開發者人數最多 （超過 300 人）的教師。
+目前应该是两岸培训 Ruby on Rails 职业级开发者人数最多 （超过 300 人）的教师。
 
-他的課在台灣都是處於報名秒殺等級。
+他的课在台湾都是处于报名秒杀等级。
 
 #### 專長：
 
-* Ruby on Rails 網站開發
-* Ruby on Rails 培訓教學
-* 敏捷項目管理 培訓
-* 敏捷項目管理
+* Ruby on Rails 网站开发
+* Ruby on Rails 培训教学
+* 敏捷项目管理 培训
+* 敏捷项目管理
 * Growth Hacking
-* Growth Hacking 培訓
+* Growth Hacking 培训
 
 
 #### 業界榮譽：
 
 * Facebook World Hack 2012 Grand Prize
-* RubyConf China 講者
-* RubyConf Taiwan 講者
-* Reddot RubyConf 講者
-* RailsPacific 講者
+* RubyConf China 讲者
+* RubyConf Taiwan 讲者
+* Reddot RubyConf 讲者
+* RailsPacific 讲者
 
 #### 博客：
 
@@ -29,5 +29,5 @@ Xdite 是兩岸相當知名的開發者與軟體教練。具備以上的 10 年 
 
 #### 著作書籍：
 
-* Rails101：Rails 入門書，讀者超過 5000 人
-* GrowthHack 這樣做：上市兩天緊急二刷
+* Rails 101:Rails 入门书,读者超过 5000 人
+* GrowthHack 这样做:上市两天紧急二刷
