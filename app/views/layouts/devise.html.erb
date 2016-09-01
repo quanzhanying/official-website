@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin
+        <title>軟件學院
         </title>
         <%= csrf_meta_tags %>
 
@@ -17,17 +17,8 @@
             <%= render "common/admin_navbar" %>
             <%= render "common/flashes" %>
             <div class="row" style=" padding-top:20px;">
-                <div class="col-md-2">
-                    <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
 
-                        <li><%= active_link_to("類別", admin_categories_path , :active => :inclusive, :wrap_tag => :li ) %></li>
-                        <li><%= active_link_to("問題", admin_faqs_path , :active => :inclusive, :wrap_tag => :li ) %></li>
-                        <li><%= active_link_to("使用者", admin_users_path , :active => :inclusive, :wrap_tag => :li ) %></li>
-                    </ul>
-
-                </div>
-
-                <div class="col-md-10">
+                <div class="col-md-12">
 
                     <%= yield %>
                 </div>
