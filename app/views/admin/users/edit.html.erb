@@ -1,0 +1,16 @@
+<h1>
+    Edit Course
+</h1>
+
+<h2>
+    Settings for your profile
+</h2>
+<hr>
+
+<%= simple_form_for [:admin, @user] do |f| %>
+
+<%= f.input :email, :label =>"Email" %>
+<%= f.submit "SAVE SETTINGS", class: "btn btn-info" %>
+<% end %>
+
+</div>

@@ -13,7 +13,12 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :faqs
     resources :categories
-    resources :users
+    resources :users do
+      member do
+        post :turn_to_user
+        post :turn_to_admin
+      end
+    end
   end
   root to: "welcome#index"
 end
