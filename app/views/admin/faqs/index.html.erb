@@ -1,31 +1,29 @@
-
 <h2>Faqs</h2>
 
 <div class="clearfix">
-  <%= link_to 'New FAQ', new_admin_faq_path, :class => "btn btn-default pull-right" %>
+    <%= link_to 'New FAQ', new_admin_faq_path, :class => "btn btn-default pull-right" %>
 
 </div>
 <br>
 <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Category</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Category</th>
+            <th colspan="3"></th>
+        </tr>
+    </thead>
 
-  <tbody>
-    <% @faqs.each do |faq| %>
-      <tr>
-        <td><%= faq.title %></td>
-        <td><%= faq.content %></td>
-        <td><%= faq.category_id %></td>
-        <td><%= link_to 'Show', admin_faq_path(faq) %></td>
-        <td><%= link_to 'Edit', edit_admin_faq_path(faq) %></td>
-        <td><%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+    <tbody>
+        <% @faqs.each do |faq| %>
+        <tr>
+            <td><%= faq.title %></td>
+            <td><%= render_trix_content(faq.content) %></td>
+            <td><%= faq.category.title %></td>
+            <td><%= link_to 'Edit', edit_admin_faq_path(faq) %></td>
+            <td><%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+    </tbody>
 </table>

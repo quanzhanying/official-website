@@ -1,6 +1,14 @@
 class Faq < ApplicationRecord
   belongs_to :category
   acts_as_list scope: :category
+
+  def publish!
+    update_column(:is_hidden, false)
+  end
+
+  def draft!
+    update_column(:is_hidden, true)
+  end
 end
 
 # == Schema Information

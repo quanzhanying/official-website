@@ -14,11 +14,24 @@
     <tbody>
         <% @faqs.each do |faq| %>
         <tr>
-            <td><%= faq.title %></td>
+            <td><%= render_faq_status(faq) %> <%= faq.title %></td>
             <td><%= render_trix_content(faq.content) %></td>
             <td><%= faq.category.title %></td>
-            <td><%= link_to 'Edit', edit_admin_faq_path(faq) %></td>
-            <td><%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Edit', edit_admin_faq_path(faq) %>
+                |
+                <%= link_to 'Destroy', admin_faq_path(faq), method: :delete, data: { confirm: 'Are you sure?' } %>
+                |
+                <%= ibutton("Move Up", move_up_admin_faq_path(faq) , :iclass => "fa fa-arrow-up", :method => :post ) %>
+                |
+                <%= ibutton("Move Down", move_down_admin_faq_path(faq) , :iclass => "fa fa-arrow-down", :method => :post) %>
+
+                <% if faq.is_hidden %>
+                  <%= ibutton("Publish", publish_admin_faq_path(faq), :method => :post , :iclass => "fa fa-globe") %>
+                <% else %>
+                  <%= ibutton("Draft", draft_admin_faq_path(faq), :method => :post,  :iclass => "fa fa-inbox") %>
+                <% end %>
+
+            </td>
         </tr>
         <% end %>
     </tbody>

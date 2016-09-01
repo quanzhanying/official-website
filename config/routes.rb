@@ -12,7 +12,15 @@ Rails.application.routes.draw do
   resources :faqs, only: [:index]
 
   namespace :admin do
-    resources :faqs
+    resources :faqs do
+      member do
+        post :publish
+        post :draft
+        post :move_up
+        post :move_down
+        get :answers
+      end
+    end
     resources :categories
     resources :users do
       member do

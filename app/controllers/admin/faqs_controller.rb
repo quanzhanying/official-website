@@ -52,6 +52,35 @@ class Admin::FaqsController < AdminController
     redirect_to admin_faqs_url
   end
 
+  def move_up
+    @faq = Faq.find(params[:id])
+    @faq.move_higher
+  end
+
+  def move_down
+    @faq = Faq.find(params[:id])
+
+    @faq.move_lower
+
+    redirect_to :back
+  end
+
+  def publish
+    @faq = Faq.find(params[:id])
+
+    @faq.publish!
+
+    redirect_to :back
+  end
+
+  def draft
+    @faq = Faq.find(params[:id])
+
+    @faq.draft!
+
+    redirect_to :back
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
